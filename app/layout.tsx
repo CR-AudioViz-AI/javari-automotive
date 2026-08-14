@@ -4,7 +4,7 @@ import './globals.css'
 export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: 'Javari Automotive | CR AudioViz AI',
-  description: 'AI automotive tools — vehicle data, market values, maintenance.'
+  description: 'AI automotive tools — vehicle data, market values, maintenance.',
   openGraph: { title: 'Javari Automotive | CR AudioViz AI', description: 'AI automotive tools — vehicle data, market values, maintenance.', type: 'website' },,
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {

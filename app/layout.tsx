@@ -3,9 +3,16 @@ import type { Metadata } from 'next'
 import './globals.css'
 export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
+  metadataBase: new URL('https://automotive.craudiovizai.com'),
+  icons: {
+    icon: [{ url: '/favicon.png', sizes: '32x32' }, { url: '/icon-512.png', sizes: '512x512' }],
+    apple: '/apple-touch-icon.png',
+  },
+
   title: 'Javari Automotive | CR AudioViz AI',
   description: 'AI automotive tools — vehicle data, market values, maintenance.',
-  openGraph: { title: 'Javari Automotive | CR AudioViz AI', description: 'AI automotive tools — vehicle data, market values, maintenance.', type: 'website' },
+  twitter: { card: 'summary_large_image', images: ['/og-image.png'] },
+  openGraph: { images: [{ url: '/og-image.png', width: 1200, height: 630 }], title: 'Javari Automotive | CR AudioViz AI', description: 'AI automotive tools — vehicle data, market values, maintenance.', type: 'website' },
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
